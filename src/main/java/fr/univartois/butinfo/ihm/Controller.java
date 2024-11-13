@@ -5,7 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
 
-public class HelloController {
+public class Controller {
 	private int[][] tab = new int[4][4];
 	private Label[][] label = new Label[4][4];
 	boolean victoire=false;
@@ -323,7 +323,7 @@ public class HelloController {
     @FXML
     protected void OnMouvmentButtonClickH() {
     	if (!victoire && !defaite) {
-    		welcomeText.setText("↑");
+    		welcomeText.setText("^");
     		deplacementG();
     		ajoutRound();
     		maj();
@@ -335,7 +335,7 @@ public class HelloController {
     @FXML
     protected void OnMouvmentButtonClickB() {
     	if (!victoire && !defaite) {
-    		welcomeText.setText("↓");
+    		welcomeText.setText("v");
     		deplacementD();
     		ajoutRound();
     		maj();
@@ -347,7 +347,7 @@ public class HelloController {
     @FXML
     protected void OnMouvmentButtonClickG() {
     	if (!victoire && !defaite) {
-    		welcomeText.setText("←");
+    		welcomeText.setText("<");
     		deplacementH();
     		ajoutRound();
     		maj();
@@ -359,7 +359,7 @@ public class HelloController {
     @FXML
     protected void OnMouvmentButtonClickD() {
     	if (!victoire && !defaite) {
-    		welcomeText.setText("→");
+    		welcomeText.setText(">");
     		deplacementB();
     		ajoutRound();
     		maj();

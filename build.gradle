@@ -21,7 +21,7 @@ targetCompatibility = '17'
 // Le nom de la classe contenant la méthode "main".
 // Notez que le paquetage complet doit être spécifié.
 application {
-    mainClass = 'fr.univartois.butinfo.ihm.HelloApplication'
+    mainClass = 'fr.univartois.butinfo.ihm.App'
 }
 
 // La version de JavaFX utilisée dans le projet, et les composants requis.

@@ -24,14 +24,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-/**
- * La classe HelloApplication illustre le fonctionnement d'une {@link Application} JavaFX.
- *
- * @author Romain Wallon
- *
- * @version 0.1.0
- */
-public class HelloApplication extends Application {
+public class App extends Application {
 
     /**
      * Cette méthode permet d'initialiser l'affichage de la fenêtre de l'application.
@@ -43,13 +36,9 @@ public class HelloApplication extends Application {
         // Il faut d'abord récupérer la description de la vue (au format FXML).
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("hello-view.fxml"));
         Parent viewContent = fxmlLoader.load();
-        // Ensuite, on la place dans une Scene...
-		Scene scene = new Scene(viewContent, 400, 260);
-        // que l'on place elle-même dans la fenêtre.
+		Scene scene = new Scene(viewContent, 400, 500);
         stage.setScene(scene);
-        // On peut ensuite donner un titre à la fenêtre.
         stage.setTitle("2048");
-        // Enfin, on affiche la fenêtre.
         stage.show();
     }
 
